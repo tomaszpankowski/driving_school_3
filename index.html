@@ -7,44 +7,108 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="icon" href="img/favicon.png"/>
-        <title></title>
+        <title>Driving School | Home</title>
     </head>
     <body class="minh-100vh bg-secondary">
-        <header class="fixed-top">
-            <nav class="navbar navbar-dark navbar-expand-md bg-transparent">
-                <a href="#" class="navbar-brand">
+        <header class="position-absolute w-100">
+            <nav class="navbar navbar-light navbar-expand-md bg-transparent">
+                <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/navbar_logo.png" class="img-fluid" alt="logo"/>
                 </a>
+                <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-3" id="main-nav">
+                    <ul class="navbar-nav ms-auto text-end fw-bold">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="classes.html" class="nav-link">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <span class="fa fa-user"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
-            <section class="comingsoon-s1 container-fluid d-flex minh-100vh align-items-center">
-                <div class="row mx-0 w-100">
-                    <div class="col-12 col-sm-9 col-md-6 col-lg-5 mx-auto">
-                        <div class="card text-center text-white bg-dark p-3 opacity-9 border-light">
-                            <h1 class="display-5">
-                                Coming soon!
-                            </h1>
-                            <p class="initialism text-muted">
-                                We are not ready yet, however we are staring soon. 
-                                Please visit us again in a while.
+            <section class="index-s1 container-fluid d-flex minh-100vh align-items-center py-5">
+                <div class="row mx-0 w-100 mt-5">
+                    <div class="col-12 col-sm-4 col-md-12 col-lg-7 minh-25vh order-1 order-sm-2 order-md-1 order-lg-2"></div>
+                    <div class="col-12 col-sm-8 col-md-12 col-lg-5 minh-50vh order-2 order-sm-1 order-md-2 order-lg-1 d-flex align-items-center">
+                        <div class="w-100 text-center text-sm-start text-md-center text-lg-start text-shadow"> 
+                            <h2 class="display-6 text-dark text-uppercase">
+                                Join our driving school
+                            </h2>
+                            <p class="lead text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                consequat. 
                             </p>
+                            <a href="classes.html" class="btn btn-outline-dark rounded-pill">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="container-fluid d-flex bg-dark border-top text-white fixed-bottom align-items-center py-3 opacity-9">
-            <div class="row mx-0 w-100">
-                <div class="col-12 text-center text-shadow">
-                    <small>
+        <footer class="container-fluid d-flex text-dark align-items-center bg-dark text-white pt-3 opacity-9 border-top">
+            <div class="row mx-0 w-100 small opacity-9">
+                <div class="col-12 col-md-5 text-center text-md-start">
+                    <h6 class="text-uppercase mb-3">
+                        Contact us
+                    </h6>
+                    <p class="initialism fw-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <address class="border-start border-dark ps-3 small">
+                        Abcdfg Street 12,<br/>
+                        00-000 City,<br/>
+                        +(00) 987 654 124<br/>
+                        email&#64;email.com
+                    </address>
+                </div>
+                <div class="col-12 col-md-7 text-center text-md-end">                    
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa fa-facebook text-white"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa fa-instagram text-white"></span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa fa-twitter text-white"></span>
+                            </a>
+                        </li>
+                    </ul>       
+                </div>
+                <div class="col-12 text-center border-top">
+                    <p class="mb-1">
                         Copyright &copy; 2021 Tomasz Pankowski. 
-                        <a href="privacy.html" class="text-white text-decoration-none">
+                        <a href="privacy.html" class="fw-bold text-white text-decoration-none">
                             Privacy policy
                         </a>
-                    </small>
+                    </p>
                 </div>
             </div>
         </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
