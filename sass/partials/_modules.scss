@@ -1,0 +1,99 @@
+.about{
+    &-s1{
+        background-position: top center!important;
+    }
+    &-s2{
+        background-position: center!important;
+    }
+}
+.bg{
+    &-yellow{
+        background-color: $color__yellow;
+    }
+}
+.classes{
+    &-s1{
+        background-position: top center!important;
+    }
+}
+.contact{
+    &-s1{
+        background-position: top center!important;
+    }
+}
+.index{
+    &-s1{
+        background-position: center!important;
+    }
+}
+textarea{
+    resize: none;
+}
+@media all and (max-width: 575px){
+    .contact{
+        &-s1{
+            & *{
+                color: #fff!important;
+            }
+            background-color: #888;
+            background-blend-mode: multiply;
+            background-position: top right!important            
+        }
+    }
+}
+@media all and (max-width: 767px){
+    .about{
+        &-s1{
+            & *{
+                color: #fff!important;
+            }
+            background-color: #888!important;
+            background-blend-mode: multiply;
+            background-position: top left!important; 
+        }
+        &-s2{
+            & *{
+                color: #fff!important;
+            }
+            background-color: #888!important;
+            background-blend-mode: multiply;
+            background-position: top right!important            
+        }
+    }
+    .classes{
+        &-s1{
+            & *{
+                color: #fff!important;
+            }
+            background-color: #888;
+            background-blend-mode: multiply;
+            background-position: top left!important; 
+        }
+    }
+    .contact{
+        &-s1{
+            background-position: center!important; 
+        }
+        &-s2{
+            background-position: top right!important; 
+        }
+    }
+    .index{
+        &-s1{
+            & *{
+                color: #fff!important;
+            }
+            background-color: #888;
+            background-blend-mode: multiply;
+            background-position: top right!important            
+        }
+    }
+    .navbar{
+        &-nav{
+            background-color: #333;
+            border: 1px solid #555;
+            opacity:0.8;
+            padding-right: 10px;
+        }
+    }
+}
