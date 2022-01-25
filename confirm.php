@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="icon" href="img/favicon.png"/>
-        <title>Driving School | About</title>
+        <title>Driving School | Message sent</title>
     </head>
     <body class="minh-100vh bg-secondary">
         <header class="position-absolute w-100">
@@ -33,7 +33,7 @@
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="user.php" class="nav-link">
+                            <a href="user.php class="nav-link">
                                 <span class="fa fa-user"></span>
                             </a>
                         </li>
@@ -41,54 +41,62 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section class="about-s1 container-fluid d-flex minh-50vh align-items-center py-5">
-                <div class="row mx-0 w-100 mt-5">
-                    <div class="col-12 col-md-7 minh-25vh"></div>
-                    <div class="col-12 col-md-5 minh-25vh d-flex align-items-center">
-                        <div class="w-100 text-center text-md-start">
-                            <h5 class="text-dark">
-                                Education for both teens and adults
-                            </h5>
-                            <h2 class="dispaly-6 fw-bold">
-                                On time driving school
-                            </h2>
-                            <p class="text-dark">
-                                On time driving school is a community- based school that provide driver’s 
-                                education for both teens and adults. We offer top quality driver education 
-                                programs with incomparable service. Along with exceptional driving courses, 
-                                we offer one-on-one progress development, driver safely classes, and driver 
-                                improvement tips.
-                            </p>
-                        </div>
+        <section class="login-s1 container-fluid d-flex align-items-center bg-light py-5 minh-100vh">
+            <div class="my-auto w-100">
+                <div class="row mx-0 w-100 pt-5 mt-5">
+                    <div class="col-xs-12 col-sm-8 col-md-6 offset-sm-2 offset-md-3 text-center">
+                        <h3 class="text-center font-header text-light text-shadow mb-3">Message sent!</h3>
+                        <table class="table table-hover border text-left font-menu bg-light opacity-8">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="2" class="font-header">Summary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Full name</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fname']))
+                                            echo htmlspecialchars($_POST['fname']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fphone']))
+                                            echo htmlspecialchars($_POST['fphone']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fmail']))
+                                            echo htmlspecialchars($_POST['fmail']);
+                                        ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Message</td>
+                                    <td>
+                                        <?php 
+                                        if(isset($_POST['fmsg']))
+                                            echo htmlspecialchars($_POST['fmsg']);
+                                        ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="appointment.html" 
+                            class="btn btn-success font-header mt-3">OK</a>
                     </div>
                 </div>
-            </section>
-            <section class="about-s2 border-top border-dark container-fluid d-flex minh-50vh bg-light align-items-center py-5">
-                <div class="row mx-0 w-100">
-                    <div class="col-12 col-md-7 minh-25vh order-1 order-md-2"></div>
-                    <div class="col-12 col-md-5 minh-25vh order-2 order-md-1 d-flex align-items-center">
-                        <div class="w-100 text-center text-md-start">
-                            <h5 class="text-dark">
-                                One-on-one progress
-                            </h5>
-                            <h2 class="dispaly-6 fw-bold">
-                                Driver safely classes
-                            </h2>
-                            <p class="text-dark">
-                                We teach students to use their best judgment when behind the wheel to help with 
-                                confident and safe driving through any weather and traffic conditions, our courses 
-                                focuses on safe legal driving practices, drug and alcohol awareness, and road 
-                                sharing safety. Our behind –the- wheel courses allow students to experience 
-                                residential, highway, and city driving firs-hand, allowing them to utilize their 
-                                classroom knowledge and practice cautious driving before taking their New York 
-                                state driving test.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+        </section>
         <footer class="container-fluid d-flex text-dark align-items-center bg-yellow pt-3 opacity-9 border-top border-dark">
             <div class="row mx-0 w-100 small opacity-9 w-100 d-flex minh-25vh">
                 <div class="col-12 col-md-5 text-center text-md-start align-self-top">
