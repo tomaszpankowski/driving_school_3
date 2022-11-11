@@ -585,76 +585,81 @@ body, html {
 }
 
 /* line 29, ../sass/partials/_modules.scss */
+header {
+  z-index: 10;
+}
+
+/* line 32, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 575px) {
-  /* line 34, ../sass/partials/_modules.scss */
+  /* line 37, ../sass/partials/_modules.scss */
   .contact-s1 {
     background-color: #888;
     background-blend-mode: multiply;
     background-position: top right !important;
   }
-  /* line 35, ../sass/partials/_modules.scss */
+  /* line 38, ../sass/partials/_modules.scss */
   .contact-s1 * {
     color: #fff !important;
   }
 }
 @media all and (max-width: 767px) {
-  /* line 46, ../sass/partials/_modules.scss */
+  /* line 49, ../sass/partials/_modules.scss */
   .about-s1 {
     background-color: #888 !important;
     background-blend-mode: multiply;
     background-position: top left !important;
   }
-  /* line 47, ../sass/partials/_modules.scss */
+  /* line 50, ../sass/partials/_modules.scss */
   .about-s1 * {
     color: #fff !important;
   }
-  /* line 54, ../sass/partials/_modules.scss */
+  /* line 57, ../sass/partials/_modules.scss */
   .about-s2 {
     background-color: #888 !important;
     background-blend-mode: multiply;
     background-position: top right !important;
   }
-  /* line 55, ../sass/partials/_modules.scss */
+  /* line 58, ../sass/partials/_modules.scss */
   .about-s2 * {
     color: #fff !important;
   }
 
-  /* line 64, ../sass/partials/_modules.scss */
+  /* line 67, ../sass/partials/_modules.scss */
   .classes-s1 {
     background-color: #888;
     background-blend-mode: multiply;
     background-position: top left !important;
   }
-  /* line 65, ../sass/partials/_modules.scss */
+  /* line 68, ../sass/partials/_modules.scss */
   .classes-s1 * {
     color: #fff !important;
   }
 
-  /* line 74, ../sass/partials/_modules.scss */
+  /* line 77, ../sass/partials/_modules.scss */
   .contact-s1 {
     background-position: center !important;
   }
-  /* line 77, ../sass/partials/_modules.scss */
+  /* line 80, ../sass/partials/_modules.scss */
   .contact-s2 {
     background-position: top right !important;
   }
 
-  /* line 82, ../sass/partials/_modules.scss */
+  /* line 85, ../sass/partials/_modules.scss */
   .index-s1 {
     background-color: #888;
     background-blend-mode: multiply;
     background-position: top right !important;
   }
-  /* line 83, ../sass/partials/_modules.scss */
+  /* line 86, ../sass/partials/_modules.scss */
   .index-s1 * {
     color: #fff !important;
   }
 
-  /* line 92, ../sass/partials/_modules.scss */
+  /* line 95, ../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #333;
     border: 1px solid #555;
